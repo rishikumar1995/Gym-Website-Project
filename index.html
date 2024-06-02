@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Freek</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url(Images/bg.jpg);
+        height: 1280px;
+        font-family: "Agbalumo", system-ui;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .left {
+        position: absolute;
+        display: inline-block;
+        left: 20px;
+        top: 12px;
+        /* border: 2px solid red; */
+    }
+
+    .left img {
+        width: 67px;
+        filter: invert(100%);
+    }
+
+    .mid {
+        display: block;
+        width: 35%;
+        margin: 12px auto;
+        /* border: 2px solid green; */
+    }
+
+    .right {
+        position: absolute;
+        display: inline-block;
+        right: 5px;
+        top: 12px;
+        /* border: 2px solid yellow; */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        color: white;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 16px 4px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+    }
+
+    .btn, .btn1{
+        margin: 0px 9px;
+        color: white;
+        padding: 5px 10px;
+        background-color: black;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+        font-family: "Agbalumo", system-ui;
+    }
+
+    .btn:hover {
+        background-color: #f73232;
+    }
+
+    .container {
+        margin: 45px 0px;
+        padding: 30px 0px;
+        width: 27%;
+        border-radius: 27px;
+        /* border: 2px solid green; */
+    }
+
+    .container h2 {
+        text-align: center;
+        font-size: 46px;
+        margin-top: 0px;
+    }
+
+    .container button {
+        display: block;
+        margin: auto;
+
+    }
+
+    .btn1:hover {
+        background-color: blue;
+        text-align: center;
+    }
+
+    .form-group input {
+        font-family: "Agbalumo", system-ui;
+        text-align: center;
+        margin: 10px auto;
+        display: block;
+        width: 269px;
+        height: 35px;
+        border-radius: 18px;
+        border: 2px solid black;
+        font-size: 16px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="Images/logo.png" alt="">
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Enroll Now</h2>
+        <div class="form-group">
+            <form action="post" method="post">
+                <input type="text" name="" placeholder="Enter your name">
+            </form>
+        </div>
+        <div class="form-group">
+            <form action="post" method="post">
+                <input type="text" name="" placeholder="Enter your age">
+            </form>
+        </div>
+        <div class="form-group">
+            <form action="post" method="post">
+                <input type="text" name="" placeholder="Enter your gender">
+            </form>
+        </div>
+        <div class="form-group">
+            <form action="post" method="post">
+                <input type="text" name="" placeholder="Enter your email">
+            </form>
+        </div>
+        <button class="btn1">Submit</button>
+    </div>
+</body>
+
+</html>
